@@ -1,0 +1,43 @@
+import type { Contract } from '@/types/contract'
+
+export const mockContracts: Contract[] = [
+  {
+    id: 'contract-1',
+    propertyId: 'prop-1',
+    tenantId: 'tenant-1',
+    ownerId: 'owner-1',
+    startDate: '2024-06-01',
+    endDate: '2026-05-31',
+    monthlyRent: 2500,
+    depositAmount: 5000,
+    status: 'active',
+    createdAt: '2024-05-20T00:00:00Z',
+    updatedAt: '2024-06-01T00:00:00Z',
+  },
+  {
+    id: 'contract-2',
+    propertyId: 'prop-2',
+    tenantId: 'tenant-2',
+    ownerId: 'owner-1',
+    startDate: '2023-12-01',
+    endDate: '2025-11-30',
+    monthlyRent: 4500,
+    depositAmount: 9000,
+    status: 'active',
+    createdAt: '2023-11-15T00:00:00Z',
+    updatedAt: '2023-12-01T00:00:00Z',
+  },
+  {
+    id: 'contract-3',
+    propertyId: 'prop-3',
+    tenantId: 'tenant-3',
+    ownerId: 'owner-1',
+    startDate: '2023-03-01',
+    endDate: '2025-02-28',
+    monthlyRent: 3000,
+    depositAmount: 6000,
+    status: 'expired',
+    createdAt: '2023-02-10T00:00:00Z',
+    updatedAt: '2025-03-01T00:00:00Z',
+  },
+]

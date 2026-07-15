@@ -1,0 +1,51 @@
+import type { PaymentInstallment } from '@/types/payment'
+
+export const mockPayments: PaymentInstallment[] = [
+  {
+    id: 'payment-1',
+    contractId: 'contract-1',
+    dueDate: '2024-07-01',
+    amount: 2500,
+    status: 'paid',
+    paidAt: '2024-07-01T10:30:00Z',
+    createdAt: '2024-06-15T00:00:00Z',
+    updatedAt: '2024-07-01T10:30:00Z',
+  },
+  {
+    id: 'payment-2',
+    contractId: 'contract-1',
+    dueDate: '2024-08-01',
+    amount: 2500,
+    status: 'pending',
+    createdAt: '2024-07-15T00:00:00Z',
+    updatedAt: '2024-07-15T00:00:00Z',
+  },
+  {
+    id: 'payment-3',
+    contractId: 'contract-1',
+    dueDate: '2024-09-01',
+    amount: 2500,
+    status: 'pending',
+    createdAt: '2024-08-15T00:00:00Z',
+    updatedAt: '2024-08-15T00:00:00Z',
+  },
+  {
+    id: 'payment-4',
+    contractId: 'contract-2',
+    dueDate: '2024-07-01',
+    amount: 4500,
+    status: 'paid',
+    paidAt: '2024-07-05T14:20:00Z',
+    createdAt: '2024-06-15T00:00:00Z',
+    updatedAt: '2024-07-05T14:20:00Z',
+  },
+  {
+    id: 'payment-5',
+    contractId: 'contract-2',
+    dueDate: '2024-08-01',
+    amount: 4500,
+    status: 'overdue',
+    createdAt: '2024-07-15T00:00:00Z',
+    updatedAt: '2024-07-15T00:00:00Z',
+  },
+]
